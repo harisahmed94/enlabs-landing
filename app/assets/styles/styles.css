@@ -1,0 +1,11 @@
+body {
+    color: green;
+}
+
+$mainBlue: #2f5572;
+
+div {
+    h2 {
+        color: $mainBlue;
+    }
+}
