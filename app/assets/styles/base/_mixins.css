@@ -1,0 +1,27 @@
+
+/* defining breakpoints for different screensizes 
+following mobile-first approach */
+
+@define-mixin atSmall {
+    @media (min-width: 576px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atMedium {
+    @media (min-width: 758px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atLarge {
+    @media (min-width: 992px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atUltraWide {
+    @media (min-width: 1200px) {
+        @mixin-content;
+    }
+}
