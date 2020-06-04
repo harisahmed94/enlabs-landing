@@ -1,7 +1,11 @@
 .row{
 
     display: flex;
-    justify-content: space-between;
+
+    &--gutters {
+        justify-content: space-between;
+    }
+
 
     &__6 {
         flex: 1;
@@ -12,5 +16,12 @@
         flex: 1;     
     }
 
+    &__3 {
+        flex: 1;
+    }
+
+    &__9 {
+        flex: 3;
+    }
 
 }

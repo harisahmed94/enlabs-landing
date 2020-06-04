@@ -1,0 +1,20 @@
+.level {
+
+    &__headline {
+        font-size: 1.32rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1.43em;
+    }
+
+    &__indicator {
+        background-color: $primaryRed;
+        text-align: center;
+        font-size: 1.33rem;
+    }
+
+    &__progress {
+        background-color: #fff;
+        color: #282c37;
+    }
+}

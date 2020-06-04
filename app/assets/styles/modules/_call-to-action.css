@@ -1,7 +1,8 @@
 .call-to-action {
     
+    font-family: 'Montserrat', sans-serif;
+    
     &__headline {
-        font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         font-size: 2.25rem;
         line-height: 1.4;
@@ -17,7 +18,6 @@
     }
 
     &__description {
-        font-family: 'Montserrat', sans-serif;
         font-size: 1.06rem;
         line-height: 1.25;
         margin-bottom: 0.88em;
@@ -25,7 +25,6 @@
     }
 
     &__btn {
-        font-family: 'Montserrat', sans-serif;
         font-size: 1.43rem;
         font-weight: 700;
         line-height: 1.25;
