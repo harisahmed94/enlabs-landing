@@ -1,0 +1,35 @@
+.call-to-action {
+    
+    &__headline {
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+    
+    &--bg-red {
+        background-color: $primaryRed;
+        margin: 0;
+        padding: 0.93rem 1.25rem;
+    }
+
+    &__description {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.06rem;
+        line-height: 1.25;
+    }
+
+    &__btn {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.43rem;
+        font-weight: 700;
+        line-height: 1.25;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        padding: 1.25rem 5rem;
+        background-color: $primaryRed;
+        box-sizing: border-box;
+    }
+}

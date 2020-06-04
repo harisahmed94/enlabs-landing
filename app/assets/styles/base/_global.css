@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    background: #5bbb00;
+    background-color: #5bbb00;
+    /* background: url('../images/bg-2.jpg');*/
 }
 
 img {
