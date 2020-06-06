@@ -42,12 +42,9 @@
         }
 
         &__description {
-            display: flex;
-            justify-content: space-between;
             margin-bottom: 1.25em;
             
             &__current {
-                flex: 1;
                 font-size: 1.329rem;
                 font-weight: 500;
             }
@@ -55,14 +52,11 @@
         }
 
         &__bounds {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
+            margin-top: 0.6em;
 
             &__min-max {
-                flex: 1;
                 font-weight: 400;
-                font-size: 12.41px;
+                font-size: 0.775rem;
             }
         }
 
