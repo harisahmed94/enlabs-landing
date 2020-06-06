@@ -1,0 +1,5 @@
+.typography{
+    &--right{
+        text-align: right;
+    }
+}

@@ -8,12 +8,20 @@
         line-height: 1.4;
         font-weight: 700;
         margin-bottom: 0.44em;
+        margin-left: 1.18rem;
     }
     
     &__headline--bg-red {
         background-color: $primaryRed;
-        margin: 0;
-        padding: 0.93rem 1.25rem;
+        padding-top: 0.93rem;
+        padding-bottom: 0.93rem;
+
+        /* To achieve unifrom left and right padding on multi-line text */
+        -moz-box-shadow: 1.18rem 0 0 $primaryRed, -1.18rem 0 0 $primaryRed;
+        -webkit-box-shadow: 1.18rem 0 0 $primaryRed, -1.18rem 0 0 $primaryRed;
+        box-shadow: 1.18rem 0 0 $primaryRed, -1.18rem 0 0 $primaryRed;
+
+        /* Fix for firefox */
         box-decoration-break: clone;
     }
 

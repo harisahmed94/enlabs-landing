@@ -1,0 +1,38 @@
+.progress-bar {
+    
+    /* resetting the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* removing default border in firefox */
+    border: none;
+
+    /* IE 10 and above*/
+    color: #25af38;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+
+    /* webkit browser styling */
+    &::-webkit-progress-bar {
+        background-color: #d6d6d6;
+        border-radius: 25px;
+    }
+
+    &::-webkit-progress-value {
+        border-radius: 25px;
+        background-color: #25af38;
+    }
+
+    /* firefox styling */
+
+    background-color: #d6d6d6;
+    border-radius: 25px;
+
+    &::-moz-progress-bar {
+        background-color: #25af38;
+        border-radius: 25px;
+    }
+}
