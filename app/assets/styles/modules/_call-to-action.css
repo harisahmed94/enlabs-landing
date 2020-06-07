@@ -1,10 +1,14 @@
 .call-to-action {
     
     font-family: 'Montserrat', sans-serif;
-    padding-top: 350px;
+    padding-top: 21.875rem;
+
+    @mixin atLarge {
+        padding-top: 31.25rem;
+    }
 
     @mixin atUltraWide {
-        padding-top: 100px;
+        padding-top: 6.35rem;
     }
     
     &__headline {
@@ -78,6 +82,10 @@
             padding: 1.25rem 5rem;
             background-color: #26ae39;
             box-sizing: border-box;
+        }
+
+        &:hover {
+            background-color: $primaryGreen;
         }
     }
 }

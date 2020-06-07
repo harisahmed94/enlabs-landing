@@ -6,8 +6,26 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     background-color: #5bbb00;
-    background: url('/assets/images/Layer-7.jpg') 60% 0 no-repeat;
+    background: url('/assets/images/bg.jpg') 63% 0 no-repeat; 
     background-size: cover;
+
+    @mixin atSmall {
+        background: url('/assets/images/bg.jpg') 65% 0 no-repeat;
+        background-size: cover; 
+    }
+
+    @mixin atMedium {
+        background: url('/assets/images/bg.jpg') 80% 0 no-repeat;
+        background-size: cover;
+    }
+    
+    @mixin atLarge {
+        background: url('/assets/images/bg.jpg') 70% 0 no-repeat;
+    }
+
+    @mixin atUltraWide {
+        background: url('/assets/images/bg.jpg') 60% 0 no-repeat;
+    }
 }
 
 img {
