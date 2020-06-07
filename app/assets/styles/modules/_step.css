@@ -3,7 +3,13 @@
     background-color: #0f7c0c;
     text-align: center;
     padding: 1.25rem 4.375rem 2.81rem;
-    max-width: 288px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+    @mixin atLarge {
+        max-width: 288px;
+        margin-bottom: 0;
+    }
 
     &__count {
         font-size: 3.24rem;

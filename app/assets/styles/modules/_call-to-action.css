@@ -1,14 +1,28 @@
 .call-to-action {
     
     font-family: 'Montserrat', sans-serif;
+    padding-top: 350px;
+
+    @mixin atUltraWide {
+        padding-top: 100px;
+    }
     
     &__headline {
         text-transform: uppercase;
-        font-size: 2.25rem;
-        line-height: 1.4;
+        font-size: 1.2rem;
+        line-height: 2;
         font-weight: 700;
-        margin-bottom: 0.44em;
+        margin-bottom: 1.2em;
         margin-left: 1.18rem;
+
+        @mixin atSmall {
+            font-size: 2rem;
+            line-height: 1.4;
+        }
+
+        @mixin atUltraWide {
+            margin-bottom: 0.44em;
+        }
     }
     
     &__headline--bg-red {
@@ -26,22 +40,39 @@
     }
 
     &__description {
-        font-size: 1.06rem;
-        line-height: 1.25;
+        font-size: 0.98rem;
+        line-height: 1.5;
         margin-bottom: 0.88em;
-        margin-left: 1em;
+
+        @mixin atSmall {
+            font-size: 1.06rem;
+            line-height: 1.25;
+        }
+
+        @mixin atLarge {
+            margin-left: 1em;
+        }
     }
 
     &__btn {
-        font-size: 1.43rem;
-        font-weight: 700;
-        line-height: 1.25;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fff;
-        display: inline-block;
-        padding: 1.25rem 5rem;
-        background-color: #26ae39;
-        box-sizing: border-box;
+
+        /* hiding the button on small screens*/
+        position: absolute;
+        left: -9999px;
+
+        @mixin atUltraWide {
+            position: relative;
+            left: 0;
+            font-size: 1.43rem;
+            font-weight: 700;
+            line-height: 1.25;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            padding: 1.25rem 5rem;
+            background-color: #26ae39;
+            box-sizing: border-box;
+        }
     }
 }

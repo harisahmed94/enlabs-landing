@@ -1,19 +1,25 @@
 .row{
 
-    display: flex;
+    @mixin atLarge {
+        display: flex;    
+    }
 
     &--gutters {
-        justify-content: space-between;
+        @mixin atLarge {
+            justify-content: space-between;
+        }
     }
 
 
     &__6 {
         flex: 1;
-        max-width: 50%;
+        
     }
 
-    &__4 {
-        flex: 1;     
+    &__large__4 {
+        @mixin atLarge {
+            flex: 1;     
+        }
     }
 
     &__3 {

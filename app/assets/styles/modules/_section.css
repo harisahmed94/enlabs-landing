@@ -1,4 +1,6 @@
 .section {
-    padding-top: 5.375rem;
-    padding-bottom: 3.375rem;
+    @mixin atUltraWide {
+        padding-top: 5.375rem;
+        padding-bottom: 3.375rem;
+    }
 }
