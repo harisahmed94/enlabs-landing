@@ -20,6 +20,11 @@
             line-height: 1.4;
         }
 
+        @mixin atLarge {
+            line-height: 1.6;
+            margin-bottom: 0.5em;
+        }
+
         @mixin atUltraWide {
             margin-bottom: 0.44em;
         }
@@ -42,14 +47,14 @@
     &__description {
         font-size: 0.98rem;
         line-height: 1.5;
-        margin-bottom: 0.88em;
+        margin-bottom: 1.2em;
 
         @mixin atSmall {
             font-size: 1.06rem;
             line-height: 1.25;
         }
-
-        @mixin atLarge {
+        
+        @mixin atUltraWide {
             margin-left: 1em;
         }
     }
